@@ -1,4 +1,3 @@
 # SITEPROJECT
 
-Valentin Gonon--Caetano
-Amelia Perme
+Valentin Gonon--Caetano & Amelia Perme project
