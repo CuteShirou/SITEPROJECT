@@ -35,3 +35,8 @@
 .video-container iframe {
     max-width: 100%;
 }
+
+.section {
+    width: 50%;
+    height: 100%;
+}
