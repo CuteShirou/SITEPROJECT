@@ -53,6 +53,15 @@ nav a {
     font-family: Comic, sans-serif;
 }
 
+.general-text {
+
+    font-size: 30px;
+    color: white;
+    top: 400px;
+    left: 400px;
+
+}
+
 .sub-title {
     font-size: 30px;
     font-weight: bold;
@@ -89,11 +98,30 @@ nav a {
 }
 
 .video-dynamique {
-    position: fixed;
+    position: absolute;
     top: 350px;
     left: 10px;
     font-size: 18px;
 }
+
+/* Fonction Bouton et Animation Bouton */
+.Bouton1 {
+    position: absolute;
+    top: 750px;
+    left: 680px;
+    font-size: 10px;
+}
+
+.button-container {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.button-container:hover {
+    transform: scale(1.1);
+}
+
+/* Esthetique */
 
 .neon-text {
     font-size: 6em;
@@ -125,6 +153,8 @@ nav a {
     z-index: -2;
   }
   
+  /* Animation */
+
   @keyframes glow {
     0%, 100% {
       opacity: 0;
@@ -132,4 +162,48 @@ nav a {
     50% {
       opacity: 1;
     }
+  }
+
+
+.image-fader {
+    width: 300px;
+    height: 300px;
+  }
+
+.image-fader img {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+
+  @keyframes imagefade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .image-fader img:nth-of-type(1) {
+    animation-delay: 4s;
+  }
+  .image-fader img:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  .image-fader img:nth-of-type(3) {
+    animation-delay: 0s;
   }
