@@ -79,7 +79,6 @@ nav a {
 }
 
 /* Animation */
-
 @keyframes glow {
     0%, 100% {
       opacity: 0;
