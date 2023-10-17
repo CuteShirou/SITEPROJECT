@@ -1,11 +1,16 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('https://cdn.discordapp.com/attachments/1161296362479034479/1163773424456437760/3412559.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: black;
+    background-color: #1b1b1b;
     color: white;
+    background-image: linear-gradient(to right, #f03030, #494949, #309eff);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +48,13 @@ nav a {
 }
 
 .centered-title {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     font-family: Comic, sans-serif;
 }
 
 .sub-title {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Comic, sans-serif;
 }
@@ -68,17 +73,55 @@ nav a {
     margin-right: 1250px
 }
 
-.video-container iframe {
-    max-width: 100%;
+
+
+
+/* Fix des textes */
+.titre-dynamique {
+    position: absolute;
+    top: 350px;
+    left: 590px;
+    color: #f03030;
+    font-size: 18px;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 4px 4px 8px #309efff3;
 }
 
-.section {
-    width: 50%;
-    height: 100%;
+.video-dynamique {
+    position: fixed;
+    top: 350px;
+    left: 10px;
+    font-size: 18px;
 }
 
-.element {
+.neon-text {
+    font-size: 6em;
+    color: #fff; /* Couleur du texte normale */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
     position: relative;
-    bottom: 0;
-    right: 0;
-}
+    text-transform: uppercase;
+  }
+  
+  .neon-text::before {
+    content: attr(data-text); /* Utilisation de l'attribut data-text pour le texte original */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f06; /* Couleur de l'ombre néon */
+    text-shadow: 0 0 10px #f06, 0 0 20px #f06, 0 0 30px #f06, 0 0 40px #f06, 0 0 50px #f06, 0 0 60px #f06, 0 0 70px #f06;
+    opacity: 0;
+    z-index: -1;
+    animation: glow 2s linear infinite;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
