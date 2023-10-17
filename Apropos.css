@@ -62,14 +62,27 @@ p {
     line-height: 1.5;
 }
 
-images img {
-    max-width: 100%;
-    height: auto;
-}
-
 footer {
     background-color: #00BFFF;
     text-align: center;
     padding: 10px;
+    color: white;
+}
+
+.description {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.description h2 {
+    font-size: 3rem;
+    color: #00BFFF;
+}
+
+.description p {
+    font-size: 1.75rem;
+    line-height: 1.5;
     color: white;
 }
