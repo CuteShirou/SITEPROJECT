@@ -57,6 +57,9 @@ nav a {
     font-size: 30px;
     font-weight: bold;
     font-family: Comic, sans-serif;
+    text-shadow: 4px 4px 8px #309efff3;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
 }
 
 .flex-container {
@@ -74,8 +77,6 @@ nav a {
 }
 
 
-
-
 /* Fix des textes */
 .titre-dynamique {
     position: absolute;
@@ -83,9 +84,8 @@ nav a {
     left: 590px;
     color: #f03030;
     font-size: 18px;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: black;
-    text-shadow: 4px 4px 8px #309efff3;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #502975;
 }
 
 .video-dynamique {
@@ -97,7 +97,6 @@ nav a {
 
 .neon-text {
     font-size: 6em;
-    color: #fff; /* Couleur du texte normale */
     text-align: center;
     font-weight: bold;
     font-family: "Arial", sans-serif;
@@ -106,15 +105,24 @@ nav a {
   }
   
   .neon-text::before {
-    content: attr(data-text); /* Utilisation de l'attribut data-text pour le texte original */
+    content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
-    color: #f06; /* Couleur de l'ombre néon */
-    text-shadow: 0 0 10px #f06, 0 0 20px #f06, 0 0 30px #f06, 0 0 40px #f06, 0 0 50px #f06, 0 0 60px #f06, 0 0 70px #f06;
+    color: #f03030;
+    text-shadow: 0 0 10px #f03030, 0 0 20px #f03030, 0 0 30px #f03030, 0 0 40px #f03030, 0 0 50px #309eff, 0 0 60px #309eff, 0 0 70px #309eff, 0 0 80px #309eff;
     opacity: 0;
     z-index: -1;
     animation: glow 2s linear infinite;
+  }
+  
+  .neon-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    z-index: -2;
   }
   
   @keyframes glow {
