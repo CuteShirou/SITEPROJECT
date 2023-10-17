@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.discordapp.com/attachments/1161296362479034479/1163773424456437760/3412559.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #1b1b1b;
+    color: white;
+    background-image: linear-gradient(to right, #f03030, #494949, #309eff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Comic, sans-serif;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.centered-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.centered-title {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Comic, sans-serif;
+}
+
+.general-text {
+
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+.sub-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Comic, sans-serif;
+    text-shadow: 4px 4px 8px #309efff3;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.left-content {
+    flex: 1;
+}
+
+/* Animation */
+
+@keyframes glow {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+.image-fader {
+    width: 300px;
+    height: 300px;
+  }
+
+.image-fader img {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+
+  @keyframes imagefade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .image-fader img:nth-of-type(1) {
+    animation-delay: 4s;
+  }
+  .image-fader img:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  .image-fader img:nth-of-type(3) {
+    animation-delay: 0s;
+  }
