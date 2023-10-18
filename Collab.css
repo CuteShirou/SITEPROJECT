@@ -119,7 +119,7 @@ footer {
 
   .image-fader img {
     position: absolute;
-    top: 350px;
+    top: 280px;
     left: 200px;
     animation-name: imagefade;
     animation-timing-function: ease-in-out;
@@ -175,4 +175,26 @@ footer {
 }
 .image-fader img:nth-of-type(10) {
   animation-delay: 0s;
+}
+
+#cycle::after {
+  -webkit-animation: cycle 4s infinite; /* Safari 4+ */
+  -moz-animation: cycle 4s infinite; /* Fx 5+ */
+  -o-animation: cycle 4s infinite; /* Opera 12+ */
+  animation: cycle 4s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes cycle {
+0% {
+  content: "Corgi";
+}
+33% {
+  content: "Shih Tzu";
+}
+66% {
+  content: "Pug";
+}
+100% {
+  content: "Dachshund";
+}
 }
