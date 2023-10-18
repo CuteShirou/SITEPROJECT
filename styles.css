@@ -7,6 +7,14 @@ body {
     background-attachment: fixed;
 }
 
+.parallax {
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTU5eDkwNWQwdmNiYzI5OTU3N2w0bzQwajhkZWlsbm5iYzlxb3YzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sr8YsbzczwisgPdDAH/giphy.gif");
+    height: 100%; 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 header {
     background-color: #1b1b1b;
