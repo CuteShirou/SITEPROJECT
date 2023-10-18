@@ -5,6 +5,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -15,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -70,19 +76,19 @@ footer {
 }
 
 .description {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .description h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #00BFFF;
 }
 
 .description p {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 0.9;
     color: white;
 }
