@@ -17,6 +17,13 @@ header {
     padding: 10px 20px;
 }
 
+footer {
+    background-color: #00BFFF;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
