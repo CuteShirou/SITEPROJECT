@@ -176,24 +176,42 @@ footer {
   animation-delay: 0s;
 }
 
-#cycle::after {
-  -webkit-animation: cycle 4s infinite; /* Safari 4+ */
-  -moz-animation: cycle 4s infinite; /* Fx 5+ */
-  -o-animation: cycle 4s infinite; /* Opera 12+ */
-  animation: cycle 4s infinite; /* IE 10+, Fx 29+ */
+#cycle:after{
+
+  animation: cycle 32s infinite alternate; /* IE 10+, Fx 29+ */
+  Content: "";
+  display: block;
 }
 
 @keyframes cycle {
 0% {
-  content: "Corgi";
+  content: "Billie Eilish";
+}
+11% {
+  content: "Linkin Park";
+}
+22% {
+  content: "Green Day";
 }
 33% {
-  content: "Shih Tzu";
+  content: "Lady Gaga";
+}
+44% {
+  content: "Fall out Boy";
+}
+55% {
+  content: "Imagine Dragons";
 }
 66% {
-  content: "Pug";
+  content: "Panic! At the Disco";
+}
+77% {
+  content: "Queen";
+}
+88% {
+  content: "The Weeknd";
 }
 100% {
-  content: "Dachshund";
+  content: "Linkin Park x Mike Shinoda";
 }
 }
