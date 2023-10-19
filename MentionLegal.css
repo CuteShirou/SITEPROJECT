@@ -71,6 +71,31 @@ p {
 footer {
     background-color: #00BFFF;
     text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.8);;
+    padding: 30px;
+    border: 0.8px solid #ccc;
+    border-radius: 0.8px;
+}
+
+.description h2 {
+    font-size: 1.7rem;
+    color: #00BFFF;
+}
+
+.description p {
+    font-size: 1.6rem;
+    line-height: 0.9;
+    color: white;
+}
+
+footer {
+    background-color: #00BFFF;
+    text-align: center;
     padding: 5px;
     color: white;
 }
@@ -90,21 +115,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 99%;
-}
-.description {
-    background-color: rgba(0, 0, 0, 0.8);;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-.description h2 {
-    font-size: 2rem;
-    color: #00BFFF;
-}
-
-.description p {
-    font-size: 1.75rem;
-    line-height: 0.9;
-    color: white;
 }

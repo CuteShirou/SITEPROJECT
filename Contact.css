@@ -10,7 +10,7 @@ body {
 header {
     background-color: #1b1b1b;
     color: white;
-    background-image: linear-gradient(to right, #f03030, #494949, #309eff);
+    background-image: linear-gradient(to right, #f03030, #f07fff, #309eff);
     display: flex;
     justify-content: space-between;
     align-items: center;

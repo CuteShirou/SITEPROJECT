@@ -19,7 +19,7 @@ body {
 header {
     background-color: #1b1b1b;
     color: white;
-    background-image: linear-gradient(to right, #f03030, #494949, #309eff);
+    background-image: linear-gradient(to right, #f03030, #f07fff, #309eff);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,12 +101,13 @@ nav a {
 }
 
 .sub-title {
+    color: #dbe7f1f3;
     font-size: 30px;
     font-weight: bold;
     font-family: Comic, sans-serif;
-    text-shadow: 4px 4px 8px #309efff3;
+    text-shadow: 4px 4px 8px #f03030;
     -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: #309efff3;
 }
 
 .flex-container {
@@ -130,6 +131,9 @@ nav a {
     top: 350px;
     left: 590px;
     color: #f03030;
+    text-shadow: 4px 4px 8px #f03030;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #309efff3;
     font-size: 18px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #502975;
@@ -145,7 +149,7 @@ nav a {
 /* Fonction Bouton et Animation Bouton */
 .Bouton1 {
     position: absolute;
-    top: 750px;
+    top: 600px;
     left: 680px;
     font-size: 10px;
 }
@@ -188,4 +192,18 @@ nav a {
     left: 0;
     color: transparent;
     z-index: -2;
+  }
+
+  .RollText {
+    position: absolute;
+    top: 500px;
+    left: -1000px;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #dbe7f1f3;
+    text-shadow: 4px 4px 8px #f03030;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #309efff3;
+    animation: ChaCha 0.5s forwards;
   }
