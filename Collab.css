@@ -53,7 +53,7 @@ nav a {
     font-family: Comic, sans-serif;
 }
 
-.general-text {
+.test-text {
 
     font-size: 30px;
     color: white;
@@ -78,24 +78,38 @@ nav a {
     flex: 1;
 }
 
+.RollText {
+  position: absolute;
+  top: 500px;
+  left: -1000px;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #dbe7f1f3;
+  text-shadow: 4px 4px 8px #f03030;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #309efff3;
+  animation: ChaCha 0.5s forwards;
+}
+
 footer {
   background-color: #00BFFF;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 
 .content {
   flex: 1;
   /* Votre contenu peut avoir une marge en haut ou en bas ici. */
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 1px;
   /* Positionnez le footer en bas de la page. */
   position: fixed;
   bottom: 0;
@@ -178,40 +192,55 @@ footer {
 
 #cycle:after{
 
-  animation: cycle 32s infinite alternate; /* IE 10+, Fx 29+ */
+  animation: cycle 30s infinite; /* IE 10+, Fx 29+ */
   Content: "";
   display: block;
 }
 
 @keyframes cycle {
+
 0% {
-  content: "Billie Eilish";
+  content: "alternative pop de Billie Eilish!";
+}
+1% {
+  content: "alternative pop de Billie Eilish!";
 }
 11% {
-  content: "Linkin Park";
+  content: "alternative rock de Linkin Park!";
 }
-22% {
-  content: "Green Day";
+21% {
+  content: "punk rock de Green Day!";
 }
-33% {
-  content: "Lady Gaga";
+31% {
+  content: "pop de Lady Gaga!";
 }
-44% {
-  content: "Fall out Boy";
+41% {
+  content: "pop punk de Fall out Boys!";
 }
-55% {
-  content: "Imagine Dragons";
+51% {
+  content: "rock de Imagine Dragons!";
 }
-66% {
-  content: "Panic! At the Disco";
+61% {
+  content: "emo punk de Panic! At the Disco!";
 }
-77% {
-  content: "Queen";
+71% {
+  content: "rock/metal de Queen!";
 }
-88% {
-  content: "The Weeknd";
+81% {
+  content: "R&B de The Weeknd!";
+}
+91% {
+  content: "alternative rock de Linkin Park et Mike Shinoda!";
 }
 100% {
-  content: "Linkin Park x Mike Shinoda";
+  content: "alternative pop de Billie Eilish!";
 }
+}
+
+@keyframes ChaCha {
+
+100% {
+  left:800px
+}
+
 }
