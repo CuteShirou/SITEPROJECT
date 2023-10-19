@@ -125,7 +125,7 @@ button:hover {
 }
 
 footer {
-    background-color: #025a77;
+    background-image: linear-gradient(to right, #f03030, #f07fff, #309eff);
     text-align: center;
     padding: 5px;
     color: white;
