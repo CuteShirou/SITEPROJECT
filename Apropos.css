@@ -71,27 +71,26 @@ p {
 footer {
     background-color: #00BFFF;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     color: white;
 }
 
 .content {
     flex: 1;
     /* Votre contenu peut avoir une marge en haut ou en bas ici. */
-    padding: 20px;
+    padding: 10px;
 }
 
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     /* Positionnez le footer en bas de la page. */
     position: fixed;
     bottom: 0;
     width: 99%;
 }
-
 .description {
     background-color: rgba(0, 0, 0, 0.8);;
     padding: 20px;
