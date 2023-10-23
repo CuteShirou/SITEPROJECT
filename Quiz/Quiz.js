@@ -149,98 +149,102 @@ var Question = function (questionObj) {
 
 let questionsData = [
   {
-    text: "Channel name",
+    text: "Quelle est la date de création de Beat Saber sur Windows ?",
     answers: [
       {
-        text: "Pewdipie",
+        text: "2016",
         isCorrect: false
       },
       {
-        text: "SmfCoder",
-        isCorrect: true
-      },
-      {
-        text: "Jack",
-        isCorrect: false
-      }
-    ]
-  },
-  {
-    text: "Channel goal",
-    answers: [
-      {
-        text: "Help you become a better developer",
-        isCorrect: true
-      },
-      {
-        text: "Help you cook amazing cookies",
+        text: "2017",
         isCorrect: false
       },
       {
-        text: "Becoming an artist",
+        text: "2018",
         isCorrect: false
       },
       {
-        text: "Don't know",
-        isCorrect: false
-      }
-    ]
-  },
-  {
-    text: "Subscribe and ...",
-    answers: [
-      {
-        text: "Watch all my videos",
-        isCorrect: false
-      },
-      {
-        text: 'Comment "I subscribed"',
-        isCorrect: false
-      },
-      {
-        text: "Active the notifications",
+        text: "2019",
         isCorrect: true
       }
     ]
   },
   {
-    text: "In witch year was the first version of c++ released",
+    text: "Quelle est le premier groupe de musique a avoir fais un partenariat avec Beat Saber ?",
     answers: [
       {
-        text: "1982",
+        text: "Imagine Dragon",
         isCorrect: true
       },
       {
-        text: "1995",
+        text: "KDA",
         isCorrect: false
       },
       {
-        text: "1983",
+        text: "Linkin Park",
         isCorrect: false
       },
       {
-        text: "1985",
+        text: "Lady Gaga",
         isCorrect: false
       }
     ]
   },
   {
-    text: "What is France capital",
+    text: "Quelle est la plus grande difficulté disponible dans le jeux ?",
     answers: [
       {
-        text: "Lyon",
-        isCorrect: true
-      },
-      {
-        text: "Marseille",
+        text: "Hard",
         isCorrect: false
       },
       {
-        text: "Paris",
+        text: "Expert",
+        isCorrect: false
+      },
+      {
+        text: "Expert +",
+        isCorrect: true
+      }
+    ]
+  },
+  {
+    text: "",
+    answers: [
+      {
+        text: "",
         isCorrect: true
       },
       {
-        text: "Lille",
+        text: "",
+        isCorrect: false
+      },
+      {
+        text: "",
+        isCorrect: false
+      },
+      {
+        text: "",
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    text: "",
+    answers: [
+      {
+        text: "",
+        isCorrect: true
+      },
+      {
+        text: "",
+        isCorrect: false
+      },
+      {
+        text: "",
+        isCorrect: true
+      },
+      {
+        text: "",
         isCorrect: false
       }
     ]

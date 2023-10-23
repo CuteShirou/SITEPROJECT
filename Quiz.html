@@ -20,21 +20,23 @@
             </ul>
         </nav>
     </header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <div id="app-container">
-        <div id="score-container">Score: 0</div>
-        <h2 id="app-title">Quiz Application (Card edition)</h2>
-        <div id="questions-container"></div>
+    <div class="spacer">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <div id="app-container">
+            <div id="score-container">Score: 0</div>
+            <div id="questions-container"></div>
+        </div>
+        <script src="Quiz/Quiz.js">
+            windows.addEventListener("load", function () {
+                console.log(
+                    "Cette fonction est exécuté une fois quand la page est chargé"
+                );
+            });
+        </script>
     </div>
-    <script src="Quiz/Quiz.js">
-        windows.addEventListener("load", function () {
-            console.log(
-                "Cette fonction est exécuté une fois quand la page est chargé"
-            );
-        });
-    </script>
+
 
     <div class="footer">
         <footer>

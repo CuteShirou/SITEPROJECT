@@ -158,7 +158,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px 20px;
+  padding: 250px 20px;
 }
 
 #questions-container {
@@ -181,7 +181,7 @@ footer {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  background: rgb(13, 110, 221);
+  background: rgb(255, 0, 0);
   padding: 10px 15px;
   min-width: 100px;
   min-height: 45px;
@@ -192,4 +192,8 @@ footer {
   margin-top: 0;
   margin-bottom: 40px;
   margin: 0 0 40px 20px;
+}
+
+div.spacer{     /* this will hide div with class div_class_name */
+  display:true;
 }
