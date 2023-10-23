@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Beat Saber</title>
-    <link rel="stylesheet" type="text/css" href="Quiz.css">
+    <link rel="stylesheet" type="text/css" href="Quiz/Quiz.css">
+    <link rel="stylesheet" type="text/css" href="Quiz/Quiz2.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,20 @@
     </header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Quiz</title>
+    <div id="app-container">
+        <div id="score-container">Score: 0</div>
+        <h2 id="app-title">Quiz Application (Card edition)</h2>
+        <div id="questions-container"></div>
+    </div>
+    <script src="Quiz/Quiz.js">
+        windows.addEventListener("load", function () {
+            console.log(
+                "Cette fonction est exécuté une fois quand la page est chargé"
+            );
+        });
+    </script>
+
     <div class="footer">
         <footer>
             <p>© 2023 G.PS. Tous droits réservés. | <a href="ConditionUlti.html">Conditions d'utilisation</a> <a href="MentionLegal.html">Mentions Légales</a></p>
