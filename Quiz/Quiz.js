@@ -194,15 +194,15 @@ let questionsData = [
     text: "Quelle est la plus grande difficulté disponible dans le jeux ?",
     answers: [
       {
-        text: "Hard",
+        text: "Insane",
         isCorrect: false
       },
       {
-        text: "Expert",
+        text: "Master",
         isCorrect: false
       },
       {
-        text: "Expert +",
+        text: "Expert+",
         isCorrect: true
       }
     ]
@@ -267,7 +267,7 @@ let questionsData = [
     answers: [
       {
         text: "100$ Bill: Jaroslav Beck",
-        isCorrect: true
+        isCorrect: false
       },
       {
         text: "Final Boss: Camellia",
@@ -279,7 +279,7 @@ let questionsData = [
       },
       {
         text: "Ghost: Camellia",
-        isCorrect: false
+        isCorrect: true
       }
     ]
   },
@@ -300,27 +300,15 @@ let questionsData = [
     text: "Quelle est la plus grande note possible ?",
     answers: [
       {
-        text: "E",
-        isCorrect: false
-      },
-      {
-        text: "D",
-        isCorrect: false
-      },
-      {
-        text: "C",
-        isCorrect: false
-      },
-      {
-        text: "B",
-        isCorrect: false
-      },
-      {
-        text: "A",
+        text: "Perfect",
         isCorrect: false
       },
       {
         text: "S",
+        isCorrect: false
+      },
+      {
+        text: "S+",
         isCorrect: false
       },
       {
@@ -360,6 +348,19 @@ let appContainer = document.getElementById("questions-container");
 let scoreContainer = document.getElementById("score-container");
 scoreContainer.innerHTML = `Score: ${score}/${questionsData.length}`;
 
+/**
+ * Shuffles array in place. ES6 version
+ * @param {Array} arr items An array containing the items.
+ */
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+shuffle(questionsData);
+
 // creating questions
 for (var i = 0; i < questionsData.length; i++) {
   let question = new Question({
@@ -374,7 +375,6 @@ for (var i = 0; i < questionsData.length; i++) {
 document.addEventListener("question-answered", ({ detail }) => {
   if (detail.answer.isCorrect) {
     score++;
-    appContainer.style.visibility='hidden' 
   }
 
   answeredQuestions++;
@@ -389,5 +389,3 @@ document.addEventListener("question-answered", ({ detail }) => {
 });
 
 console.log(questions, questionsData);
-appContainer.style.visibility='visible'
-
