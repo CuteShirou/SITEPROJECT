@@ -208,47 +208,148 @@ let questionsData = [
     ]
   },
   {
-    text: "",
+    text: "Es ce que le jeu peut avoir des mods ?",
     answers: [
       {
-        text: "",
+        text: "Oui",
         isCorrect: true
       },
       {
-        text: "",
+        text: "Non",
+        isCorrect: false
+      },
+    ]
+  },
+  {
+    text: "Quel studio developpe Beat Saber?",
+    answers: [
+      {
+        text: "Beat Games",
+        isCorrect: true
+      },
+      {
+        text: "7th Beat Studio",
         isCorrect: false
       },
       {
-        text: "",
+        text: "Super Spin Digital",
         isCorrect: false
       },
       {
-        text: "",
+        text: "PeroPero Inc.",
         isCorrect: false
       }
     ]
   },
   {
-    text: "",
+    text: "Quel est le moteur graphique de Unity",
     answers: [
       {
-        text: "",
-        isCorrect: true
-      },
-      {
-        text: "",
+        text: "Unreal Engine 4",
         isCorrect: false
       },
       {
-        text: "",
+        text: "Unreal Engine 5",
+        isCorrect: false
+      },
+      {
+        text: "Unity",
         isCorrect: true
       },
       {
-        text: "",
+        text: "Unreal Unity Engine 6",
         isCorrect: false
       }
     ]
-  }
+  },
+  {
+    text: "Quelle est la chanson considerer comme la plus dur de Beat Saber?",
+    answers: [
+      {
+        text: "100$ Bill: Jaroslav Beck",
+        isCorrect: true
+      },
+      {
+        text: "Final Boss: Camellia",
+        isCorrect: false
+      },
+      {
+        text: "Overkill: Riot",
+        isCorrect: false
+      },
+      {
+        text: "Ghost: Camellia",
+        isCorrect: false
+      }
+    ]
+  },
+  {
+    text: "Quelle est la meilleur coupe possible pour faire un maximum de points ?",
+    answers: [
+      {
+        text: "idéalement 100°",
+        isCorrect: true
+      },
+      {
+        text: "idéalement 60°",
+        isCorrect: false
+      },
+    ]
+  },
+  {
+    text: "Quelle est la plus grande note possible ?",
+    answers: [
+      {
+        text: "E",
+        isCorrect: false
+      },
+      {
+        text: "D",
+        isCorrect: false
+      },
+      {
+        text: "C",
+        isCorrect: false
+      },
+      {
+        text: "B",
+        isCorrect: false
+      },
+      {
+        text: "A",
+        isCorrect: false
+      },
+      {
+        text: "S",
+        isCorrect: false
+      },
+      {
+        text: "SS",
+        isCorrect: true
+      },
+    ]
+  },
+  {
+    text: "Quelle est la chanson la plus longue de Beat Saber? (dans le jeu de base)",
+    answers: [
+      {
+        text: "Seven Nation Army: The White Stripes",
+        isCorrect: false
+      },
+      {
+        text: "Smells Like Teen Spirit: Nirvana",
+        isCorrect: false
+      },
+      {
+        text: "Free Bird: Lynyrd Skynyrd",
+        isCorrect: true
+      },
+      {
+        text: "I was made for Lovin' You: KISS",
+        isCorrect: false
+      }
+    ]
+  },
 ];
 
 // variables initialization
@@ -258,19 +359,6 @@ let score = 0,
 let appContainer = document.getElementById("questions-container");
 let scoreContainer = document.getElementById("score-container");
 scoreContainer.innerHTML = `Score: ${score}/${questionsData.length}`;
-
-/**
- * Shuffles array in place. ES6 version
- * @param {Array} arr items An array containing the items.
- */
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-}
-
-shuffle(questionsData);
 
 // creating questions
 for (var i = 0; i < questionsData.length; i++) {
@@ -286,6 +374,7 @@ for (var i = 0; i < questionsData.length; i++) {
 document.addEventListener("question-answered", ({ detail }) => {
   if (detail.answer.isCorrect) {
     score++;
+    appContainer.style.visibility='hidden' 
   }
 
   answeredQuestions++;
@@ -300,3 +389,5 @@ document.addEventListener("question-answered", ({ detail }) => {
 });
 
 console.log(questions, questionsData);
+appContainer.style.visibility='visible'
+
