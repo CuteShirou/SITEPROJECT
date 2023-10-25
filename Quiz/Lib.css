@@ -5,10 +5,10 @@
 }
 
 .question {
-  --correct-color: rgb(9, 187, 69);
+  --correct-color: rgb(13, 238, 88);
   --incorrect-color: rgb(245, 48, 48);
   --selected-color: rgba(13, 110, 221, 0.712);
-  --disabled-color: rgb(219, 219, 219);
+  --disabled-color: rgba(44, 42, 42, 0.39);
   --disabled-correct-color: rgb(118, 212, 149);
   --disabled-incorrect-color: rgb(221, 131, 131);
 
@@ -23,6 +23,7 @@
   border: 1px solid var(--selected-color);
   border-radius: 10px;
   font-family: consolas;
+  background-color: rgba(0, 0, 0, 0.342);
 }
 
 .question-text {

@@ -39,44 +39,6 @@ nav a {
   max-width: 100px;
 }
 
-.centered-section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-}
-
-.centered-title {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: Comic, sans-serif;
-}
-
-.general-text {
-
-  font-size: 30px;
-  color: white;
-  text-align: center;
-
-}
-
-.sub-title {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Comic, sans-serif;
-  text-shadow: 4px 4px 8px #309efff3;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: black;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.left-content {
-  flex: 1;
-}
 
 header {
   background-color: #333;
@@ -85,15 +47,11 @@ header {
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-}
-
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 20px;
@@ -148,51 +106,51 @@ footer {
   width: 99%;
 }
 
-/*
-  Style pour l'affichage globale du quiz.
-*/
 #app-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px 20px;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 300px 20px;
+  }
+  
+  #questions-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: rgb(255, 255, 255);
+  }
+  
+  #score-container {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: rgb(255, 0, 0);
+    padding: 10px 15px;
+    min-width: 100px;
+    min-height: 45px;
+    border-radius: 10px;
+  }
+  
+  #app-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin: 0 0 40px 20px;
+  }
+  
+  div.spacer{     /* this will hide div with class div_class_name */
+    display:true;
+  }
 
-#questions-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, max-content);
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-#score-container {
-  position: fixed;
-  right: 40px;
-  top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  background: rgb(13, 110, 221);
-  padding: 10px 15px;
-  min-width: 100px;
-  min-height: 45px;
-  border-radius: 10px;
-}
-
-#app-title {
-  margin-top: 0;
-  margin-bottom: 40px;
-  margin: 0 0 40px 20px;
-}
-
-div.spacer{     /* this will hide div with class div_class_name */
-  display:true;
-}
+  

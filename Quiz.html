@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Beat Saber</title>
-    <link rel="stylesheet" href="Quiz/Quiz.css">
-    <link rel="stylesheet" href="Quiz/Quiz2.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="Quiz/Lib.css">
+  <link rel="stylesheet" href="Quiz/StyleQuiz.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -15,25 +14,22 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="Apropos.html">À propos</a></li>
+                <li><a href="apropos.html">À propos</a></li>
                 <li><a href="Collab.html">Collab</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="spacer">
-        <div id="app-container">
-            <div id="score-container">Score: 0</div>
-            <h2 id="app-title">Quiz Application (Card edition)</h2>
-            <div id="questions-container"></div>
-        </div>
-    </div>
-    <script src="Quiz.js"></script>
-    <div class="footer">
-        <footer>
-            <p>© 2023 G.PS. Tous droits réservés. | <a href="ConditionUlti.html">Conditions d'utilisation</a> <a href="MentionLegal.html">Mentions Légales</a></p>
-        </footer>
-    </div>
+  <div id="app-container">
+    <div id="score-container">Score: 0</div>
+    <div id="questions-container"></div>
+  </div>
+
+  <script src="Quiz/Quiz.js"></script>
+  <div class="footer">
+    <footer>
+        <p>© 2023 G.PS. Tous droits réservés. | <a href="ConditionUlti.html">Conditions d'utilisation</a> <a href="MentionLegal.html">Mentions Légales</a></p>
+    </footer>
+</div>
 </body>
-</head>
 </html>
