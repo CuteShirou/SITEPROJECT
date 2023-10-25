@@ -1,6 +1,3 @@
-//
-// lib/lib.js
-//
 var Question = function (questionObj) {
   this.value = {
     text: "Question",
@@ -143,9 +140,7 @@ var Question = function (questionObj) {
   }
 };
 
-//
 // main.js
-//
 
 let questionsData = [
   {
@@ -348,18 +343,6 @@ let appContainer = document.getElementById("questions-container");
 let scoreContainer = document.getElementById("score-container");
 scoreContainer.innerHTML = `Score: ${score}/${questionsData.length}`;
 
-/**
- * Shuffles array in place. ES6 version
- * @param {Array} arr items An array containing the items.
- */
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-}
-
-shuffle(questionsData);
 
 // creating questions
 for (var i = 0; i < questionsData.length; i++) {

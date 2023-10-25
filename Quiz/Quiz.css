@@ -151,14 +151,13 @@ footer {
 /*
   Style pour l'affichage globale du quiz.
 */
-
 #app-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 250px 20px;
+  padding: 40px 20px;
 }
 
 #questions-container {
@@ -181,7 +180,7 @@ footer {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  background: rgb(255, 0, 0);
+  background: rgb(13, 110, 221);
   padding: 10px 15px;
   min-width: 100px;
   min-height: 45px;
