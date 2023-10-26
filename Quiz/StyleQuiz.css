@@ -30,7 +30,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #CEFFFF;
   font-size: 30px;
   font-family: Comic, sans-serif;
 }
@@ -122,7 +122,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    color: rgb(255, 255, 255);
+    color: #CEFFFF;
   }
   
   #score-container {
@@ -134,8 +134,8 @@ footer {
     align-items: center;
     font-size: 18px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #CEFFFF;
     background: rgb(255, 0, 0);
     padding: 10px 15px;
     min-width: 100px;
@@ -153,4 +153,83 @@ footer {
     display:true;
   }
 
+  .panel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    background-color: #011a28be;
+    color: #CEFFFF;
+    font-size: 40px;
+    text-align: center;
+      
+}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 1px;
+      
+}
+.option-container{
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+    background-color: #011a28be;   
+        
+}
+.option{    
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: #813C58;
+    border-radius: 25%;
+}
+.option:hover{
+    background-color: #027991;
+}
+.navigation{
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#011a28be;
+}
   
+.evaluate,.next{
+    width:30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+}
+.evaluate{
+    
+    background-color: #309eff;
+}
+.next{
+    color: #CEFFFF;
+    background-color: #f03030;
+}
+
+.general-text {
+
+  font-size: 30px;
+  color: #CEFFFF;
+  text-align: center;
+
+}
