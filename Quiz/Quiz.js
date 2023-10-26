@@ -1,9 +1,8 @@
+// Questions will be asked
+
 let score = 0;
 const scoreElement = document.getElementById("score");
-function updateScore() {
-  score++
-  scoreElement.textContent = score;
-}
+
 const Questions = [{
   id: 0,
   q: "Quelle est la date de sortie de Beat Saber sur Windows ?",
@@ -25,7 +24,7 @@ const Questions = [{
 },
 {
   id: 2,
-  q: "Quelle est la plus grande difficultÃ© disponible dans le jeux ?",
+  q: "Quelle est la plus grande difficulté disponible dans le jeux ?",
   a: [{ text: "Insane", isCorrect: false },
       { text: "Master", isCorrect: false },
       { text: "Expert+", isCorrect: true },
@@ -71,8 +70,8 @@ const Questions = [{
 {
   id: 7,
   q: "Quelle est la meilleur coupe possible pour faire un maximum de points ?",
-  a: [{ text: "100Â°", isCorrect: true },
-      { text: "60Â°", isCorrect: false },
+  a: [{ text: "100°", isCorrect: true },
+      { text: "60°", isCorrect: false },
       { text: "", isCorrect: false },
       { text: "", isCorrect: false }
   ]
@@ -96,33 +95,44 @@ const Questions = [{
   ]
 }
 ]
+
 // Set start
 var start = true;
+
 // Iterate
 function iterate(id) {
+
 // Getting the result display section
 var result = document.getElementsByClassName("result");
 result[0].innerText = "";
+
 // Getting the question
 const question = document.getElementById("question");
+
+
 // Setting the question text
 question.innerText = Questions[id].q;
+
 // Getting the options
 const op1 = document.getElementById('op1');
 const op2 = document.getElementById('op2');
 const op3 = document.getElementById('op3');
 const op4 = document.getElementById('op4');
+
 // Providing option text 
 op1.innerText = Questions[id].a[0].text;
 op2.innerText = Questions[id].a[1].text;
 op3.innerText = Questions[id].a[2].text;
 op4.innerText = Questions[id].a[3].text;
+
 // Providing the true or false value to the options
 op1.value = Questions[id].a[0].isCorrect;
 op2.value = Questions[id].a[1].isCorrect;
 op3.value = Questions[id].a[2].isCorrect;
 op4.value = Questions[id].a[3].isCorrect;
+
 var selected = "";
+
 // Show selection for op1
 op1.addEventListener("click", () => {
   op1.style.backgroundColor = "#027991";
@@ -131,6 +141,7 @@ op1.addEventListener("click", () => {
   op4.style.backgroundColor = "#813C58";
   selected = op1.value;
 })
+
 // Show selection for op2
 op2.addEventListener("click", () => {
   op1.style.backgroundColor = "#813C58";
@@ -139,6 +150,7 @@ op2.addEventListener("click", () => {
   op4.style.backgroundColor = "#813C58";
   selected = op2.value;
 })
+
 // Show selection for op3
 op3.addEventListener("click", () => {
   op1.style.backgroundColor = "#813C58";
@@ -147,6 +159,7 @@ op3.addEventListener("click", () => {
   op4.style.backgroundColor = "#813C58";
   selected = op3.value;
 })
+
 // Show selection for op4
 op4.addEventListener("click", () => {
   op1.style.backgroundColor = "#813C58";
@@ -155,14 +168,18 @@ op4.addEventListener("click", () => {
   op4.style.backgroundColor = "#027991";
   selected = op4.value;
 })
+
 // Grabbing the evaluate button
 const evaluate = document.getElementsByClassName("evaluate");
+
 // Evaluate method
 evaluate[score].addEventListener("click", () => {
   if (selected == "true") {
       result[0].innerHTML = "True";
       result[0].style.color = "#309eff";
-      updateScore()
+      score++
+      document.getElementById("ScoreMarker").innerHTML = score; 
+      document.getElementById('evaluate').onclick = null;
   } else {
       result[0].innerHTML = "False";
       result[0].style.color = "#f03030";
@@ -170,12 +187,15 @@ evaluate[score].addEventListener("click", () => {
   evaluate.disabled = false
 })
 }
+
 if (start) {
 iterate("0");
 }
+
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
+
 next.addEventListener("click", () => {
 start = false;
 if (id < 10) {
@@ -184,8 +204,10 @@ if (id < 10) {
   console.log(id);
 }
 else {
-  location.href = 'result.html';
-  document.getElementById("ScoreMarker").innerHTML = score;
+  ScoreMarker.innerHTML = score;
+  document.getElementById("ScoreMarker").innerText=score;  
+  
 }
 }
 )
+
