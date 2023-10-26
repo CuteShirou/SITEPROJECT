@@ -94,7 +94,6 @@ footer {
 
 .content {
   flex: 1;
-  /* Votre contenu peut avoir une marge en haut ou en bas ici. */
   padding: 10px;
 }
 
@@ -148,7 +147,7 @@ footer {
     margin: 0 0 40px 20px;
   }
   
-  div.spacer{     /* this will hide div with class div_class_name */
+  div.spacer{
     display:true;
   }
 
