@@ -87,6 +87,9 @@ footer {
   text-align: center;
   padding: 5px;
   color: white;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }
 
 .content {
@@ -100,10 +103,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1px;
-  /* Positionnez le footer en bas de la page. */
-  position: fixed;
-  bottom: 0;
-  width: 99%;
 }
 
 #app-container {
@@ -154,7 +153,7 @@ footer {
   }
 
   .panel{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +185,7 @@ footer {
     margin: 10px;
     padding: 5px;
     width: 80vw;
-    height: 20vh;
+    height: 10vh;
     background-color: #011a28be;   
         
 }

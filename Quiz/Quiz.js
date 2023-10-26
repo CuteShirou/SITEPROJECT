@@ -10,7 +10,7 @@ function updateScore() {
 
 const Questions = [{
   id: 0,
-  q: "Quelle est la date de création de Beat Saber sur Windows ?",
+  q: "Quelle est la date de sortie de Beat Saber sur Windows ?",
   a: [{ text: "2016", isCorrect: false },
       { text: "2017", isCorrect: false },
       { text: "2018", isCorrect: false },
@@ -124,7 +124,6 @@ const op2 = document.getElementById('op2');
 const op3 = document.getElementById('op3');
 const op4 = document.getElementById('op4');
 
-
 // Providing option text 
 op1.innerText = Questions[id].a[0].text;
 op2.innerText = Questions[id].a[1].text;
@@ -188,7 +187,7 @@ evaluate[score].addEventListener("click", () => {
       result[0].innerHTML = "False";
       result[0].style.color = "#f03030";
   }
-  evaluate.disabled = true
+  evaluate.disabled = false
 })
 }
 
@@ -206,5 +205,10 @@ if (id < 10) {
   id++;
   iterate(id);
   console.log(id);
-}}
+}
+else {
+  location.href = 'result.html';
+  document.getElementById("ScoreMarker").innerHTML = score;
+}
+}
 )
