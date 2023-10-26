@@ -1,6 +1,7 @@
 window.onload = function(){ 
   let score = 0;
   let EvalRerun = 0;
+  document.getElementById("SquareHide").style.visibility = "hidden";
   const scoreElement = document.getElementById("score");
   
   const Questions = [{
@@ -11,6 +12,7 @@ window.onload = function(){
         { text: "2018", isCorrect: false },
         { text: "2019", isCorrect: true }
     ]
+  
   },
   {
     id: 1,
@@ -104,17 +106,16 @@ window.onload = function(){
   const question = document.getElementById("question");
   
   question.innerText = Questions[id].q;
-  
+
   const op1 = document.getElementById('op1');
   const op2 = document.getElementById('op2');
   const op3 = document.getElementById('op3');
-  const op4 = document.getElementById('op4');
 
   op1.innerText = Questions[id].a[0].text;
   op2.innerText = Questions[id].a[1].text;
   op3.innerText = Questions[id].a[2].text;
   op4.innerText = Questions[id].a[3].text;
-  
+
   op1.value = Questions[id].a[0].isCorrect;
   op2.value = Questions[id].a[1].isCorrect;
   op3.value = Questions[id].a[2].isCorrect;
@@ -150,9 +151,9 @@ window.onload = function(){
     op4.style.backgroundColor = "#027991";
     selected = op4.value;
   })
-  
+
   const evaluate = document.getElementsByClassName("evaluate");
-  
+
   evaluate[score].addEventListener("click", () => {
     if (selected == "true" && EvalRerun == 0) {
         result[0].innerHTML = "Vrai";
@@ -166,25 +167,37 @@ window.onload = function(){
         EvalRerun++
     }
     evaluate.disabled = false
-  })}
+  })
+  }
   
   if (start) {
   iterate("0");
   }
-  
+
   const next = document.getElementsByClassName('next')[0];
   var id = 0;
   
   next.addEventListener("click", () => {
   start = false;
-  if (id < 10) {
-    id++;
-    EvalRerun--
-    iterate(id);
-    console.log(id);
+  if (EvalRerun == 1) {
+    if (id < 10) {
+      id++;
+      EvalRerun--
+      iterate(id);
+      console.log(id);
+    }
+    else {
+      ScoreMarker.innerHTML = score;
+      document.getElementById("ScoreMarker").innerText=score;
+      document.getElementById("question").style.display = "none";
+      document.getElementById("op1").style.display = "none";
+      document.getElementById("op2").style.display = "none";
+      document.getElementById("op3").style.display = "none";
+      document.getElementById("op4").style.display = "none";
+      document.getElementById("SquareHide").style.visibility = "visible";
+      
+    }}
+    else{
+      none
+    }})
   }
-  else {
-    ScoreMarker.innerHTML = score;
-    document.getElementById("ScoreMarker").innerText=score;  
-  }})
-}
