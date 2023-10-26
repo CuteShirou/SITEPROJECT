@@ -167,8 +167,7 @@ window.onload = function(){
         EvalRerun++
     }
     evaluate.disabled = false
-  })
-  }
+  })}
   
   if (start) {
   iterate("0");
