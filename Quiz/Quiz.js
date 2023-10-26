@@ -11,7 +11,6 @@ window.onload = function(){
         { text: "2018", isCorrect: false },
         { text: "2019", isCorrect: true }
     ]
-  
   },
   {
     id: 1,
