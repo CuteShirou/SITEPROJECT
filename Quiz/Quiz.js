@@ -2,6 +2,7 @@
 window.onload = function(){ 
   let score = 0;
   let EvalRerun = 0;
+  var Feedback = document.getElementById("Feedback")
   document.getElementById("SquareHide").style.visibility = "hidden";
   const scoreElement = document.getElementById("score");
   
@@ -187,6 +188,8 @@ window.onload = function(){
   // Evaluate method
   evaluate[score].addEventListener("click", () => {
     if (selected == "true" && EvalRerun == 0) {
+        Feedback.innerText = Questions[id].f;
+        Feedback.style.color = "#309eff";
         result[0].innerText = Questions[id].f;
         result[0].style.color = "#309eff";
         score++
