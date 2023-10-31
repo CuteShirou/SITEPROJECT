@@ -15,7 +15,6 @@ window.onload = function(){
         { text: "2018", isCorrect: false },
         { text: "2019", isCorrect: true }
     ]
-  
   },
   {
     id: 1,
@@ -39,7 +38,7 @@ window.onload = function(){
   },
   {
     id: 3,
-    f: "Meme ci les mods sont souvent obsoletes due au mises a jour du jeux, elle fonctionne parfaitement et sont supporter de base.",
+    f: "Meme si les mods sont souvent obsoletes due au mises a jour du jeux, elle fonctionne parfaitement et sont supporter de base.",
     q: "Beat Saber supporte les mods.",
     a: [{ text: "Vrai", isCorrect: true },
         { text: "Faux", isCorrect: false },
@@ -69,7 +68,7 @@ window.onload = function(){
   },
   {
     id: 6,
-    f: "En competition avec Final Boss, Ghost est generalement considerer la chanson la plus dur du jeu original, avec un BPM(Beats per minute) de 110! ",
+    f: "En competition avec Final Boss, Ghost est generalement considerer la chanson la plus dur du jeu original, avec un BPM(Beats per minute) de 110!",
     q: "Quelle est la chanson considerer comme la plus dur de Beat Saber?",
     a: [{ text: "100$ Bill: Jaroslav Beck", isCorrect: false },
         { text: "Final Boss: Camellia", isCorrect: false },
