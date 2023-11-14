@@ -13,10 +13,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li><a href="apropos.html">À propos</a></li>
                 <li><a href="Collab.html">Collab</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                <li><a href="DataBase.php">DataBase</a></li>
             </ul>
         </nav>
     </header>
