@@ -76,6 +76,9 @@ nav a {
 
 .logo {
     max-width: 100px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 .centered-section {

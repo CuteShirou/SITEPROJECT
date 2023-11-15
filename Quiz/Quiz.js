@@ -195,6 +195,8 @@ window.onload = function(){
         document.getElementById("ScoreMarker").innerHTML = score; 
         EvalRerun++
     } else {
+        Feedback.innerText = Questions[id].f;
+        Feedback.style.color = "#309eff";
         result[0].innerHTML = Questions[id].f;
         result[0].style.color = "#f03030";
         EvalRerun++
@@ -227,7 +229,6 @@ window.onload = function(){
       document.getElementById("op2").style.display = "none";
       document.getElementById("op3").style.display = "none";
       document.getElementById("op4").style.display = "none";
-      document.getElementById("SquareHide").style.visibility = "visible";
     }
       
     }

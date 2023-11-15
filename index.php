@@ -17,7 +17,8 @@
                 <li><a href="apropos.html">À propos</a></li>
                 <li><a href="Collab.html">Collab</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="DataBase.php">DataBase</a></li>
+                <li><a href="Register.php">S'identifiée</a></li>
+                <li><a href="Account.php">Guest</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +50,7 @@
         </section>
         <section class="Bouton2">
             <div class="button-container">
-            <a href="Quiz.html" target="_blank">
+            <a href="Quiz.php" target="_blank">
                 <img src="https://cdn.discordapp.com/attachments/1161296362479034479/1165978598864334858/Quiz.png" alt="Bouton">
             </a></div>
         </section>
